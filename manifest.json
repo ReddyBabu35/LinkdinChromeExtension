@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+
+	"name": "Linkedin Education Scrapper",
+	"description": "A simple LinkedinEducation-scraping extension for Chrome",
+	"version": "1.0",
+	"author": "ReddyBabuK",
+
+	"background": {
+		"service_worker": "popup.js"
+		
+	},
+
+	"permissions": [
+        
+		"activeTab","scripting"
+    ],
+	"action":{
+		"default_icon":"logo.png",
+		"default_title":"click me"
+	}
+	
+}
