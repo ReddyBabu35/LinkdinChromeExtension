@@ -17,8 +17,10 @@ for (let lit of liTags)
         var ar=[]
         for (let t of laTag )
         {
+            let rgx=/logo$/i;//preventing the case of not having the logo for the institution
+            if (!(rgx.test(t.textContent))){
             ar.push(t.textContent);
-            console.log(t.textContent);
+            console.log(t.textContent);}
         }
     jsn[i++]=ar;
     console.log("")}
